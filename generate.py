@@ -471,7 +471,7 @@ def generate_page(filename, date, date_label, badge_text, matches_raw, nav_activ
     nav_today = ' class="active"' if nav_active == "today" else ""
     nav_tomorrow = ' class="active"' if nav_active == "tomorrow" else ""
 
-    schema_org = generate_schema_org(page_title, page_description, "https://esports-tracker.example.com")
+    schema_org = generate_schema_org(page_title, page_description, "https://esports-tracker-eb0es52mr-s0vakin.vercel.app")
 
     html = f"""<!DOCTYPE html>
 <html lang="ru">
@@ -484,15 +484,13 @@ def generate_page(filename, date, date_label, badge_text, matches_raw, nav_activ
     <meta name="keywords" content="киберспорт, esports, матчи, CS2, Dota 2, League of Legends, Valorant, расписание, результаты">
     <meta name="author" content="Esports Match Tracker">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://esports-tracker.example.com/{filename}">
+    <link rel="canonical" href="https://esports-tracker-eb0es52mr-s0vakin.vercel.app/{filename}">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="{page_title}">
     <meta property="og:description" content="{page_description}">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:site_name" content="Esports Match Tracker">
-
-    <!-- Schema.org -->
     {schema_org}
 
     <style>
@@ -577,7 +575,7 @@ def main():
             f.write(html)
         print(f"  Сохранено: {filepath}")
 
-    site_url = "https://esports-tracker.example.com"
+    site_url = "https://esports-tracker-eb0es52mr-s0vakin.vercel.app"
     today_iso = format_date_iso(TODAY)
     sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

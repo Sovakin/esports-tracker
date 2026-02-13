@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://esports-tracker.example.com/sitemap.xml
+Sitemap: https://esports-tracker-eb0es52mr-s0vakin.vercel.app/sitemap.xml
