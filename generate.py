@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 try:
     import requests
 except ImportError:
-    print("Библиотека requests не установлена. Установите: pip install requests")
+    print("в консоль pip install requests")
     sys.exit(1)
 
 API_TOKEN = "6LJZ7XV9wKYQ72JisFq64ZRBnEcT11JWpnZypduhmj-P6ky0SEM"
