@@ -614,10 +614,6 @@ Sitemap: {site_url}/sitemap.xml"""
         f.write(robots_txt)
     print(f"Создан: {robots_path}")
 
-    print(f"\n{'=' * 60}")
-    print(f"  Готово! Файлы в папке: {OUTPUT_DIR}/")
-    print(f"{'=' * 60}")
-
 
 if __name__ == "__main__":
     main()
